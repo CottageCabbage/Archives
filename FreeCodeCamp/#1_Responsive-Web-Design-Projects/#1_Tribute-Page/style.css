@@ -25,12 +25,16 @@ header h1 {
 }
 
 
+main {
+	display: flex;
+	height: 97vh;
+}
+
 
 figure {
-	float: left;
 	text-align: center;
 	margin-bottom: 5px;
-	margin-left: 3px;
+	margin-left: 10px;
 
 }
 
@@ -41,5 +45,6 @@ figure {
 }
 
 figcaption {
-	float: right;
+	/*float: right;*/
+	margin-top: 25px;
 }
