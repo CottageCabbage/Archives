@@ -1,4 +1,5 @@
 
 function showSources() {
-	// body...
+	 document.getElementById("sourcesDiv").style.display = "none"; 
 }
+
