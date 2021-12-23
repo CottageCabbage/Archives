@@ -1,5 +1,7 @@
 https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page
 
+**Codepen:** https://codepen.io/CottageCabbage/pen/eYGGrMq
+
 # User Stories:
 + [x] User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
 

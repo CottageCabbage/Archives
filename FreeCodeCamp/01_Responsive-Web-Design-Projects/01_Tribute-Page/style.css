@@ -38,6 +38,10 @@ main {
 		display: flex;
 		flex-direction: column;
 	}
+	#image {
+		height: 80%;
+		/*width: 50%;*/
+	}
 }
 
 
