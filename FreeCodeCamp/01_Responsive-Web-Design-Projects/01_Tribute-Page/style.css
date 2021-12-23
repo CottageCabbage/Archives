@@ -38,10 +38,20 @@ main {
 		display: flex;
 		flex-direction: column;
 	}
-	#image {
-		height: 80%;
-		/*width: 50%;*/
+	figure {
+		height: 100%;
+		max-width: 350px;
+		width: 95%;
+		margin: auto;
 	}
+
+	#image {
+		display: block;
+		width: 95%;
+		max-width: 350px;
+		margin: auto;
+	}
+	/*img {width: 95%s;}*/
 }
 
 
@@ -50,15 +60,16 @@ figure {
 	text-align: center;
 	margin-bottom: 5px;
 	margin-left: 10px;
-
-}
-
-#image {
-	border-radius: 5px;
-	box-shadow: 0px 0px 30px 2px black;
 	height: 90%;
 	/*max-width: 100%;*/
 	width: auto;
+}
+
+#image {
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0px 0px 30px 2px black;
+
 }
 
 figcaption {
