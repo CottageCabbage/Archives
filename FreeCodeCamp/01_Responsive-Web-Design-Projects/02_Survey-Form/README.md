@@ -3,6 +3,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 **Example:** https://codepen.io/freeCodeCamp/full/VPaoNP  
 **Codepen:** none
 
+35min
 # User Stories:
 
 + [x] User Story #1: I can see a title with id="title" in H1 sized text.
