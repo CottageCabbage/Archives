@@ -53,6 +53,47 @@ header {
 
 
 
+
+
+#radioDiv {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#radioDiv label {
+	width: 100% !important;
+}
+#radioDiv input {
+	display: inline-block; !important;
+	width: auto;
+}
+/*
+#radioDiv label {
+	display: inline;
+	float: right;
+}
+#survey-form input[type='radio'] {
+	display: inline;
+	float: right;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* USER STORY #16 */
 #submit {
-	margin-top: 50px;
+	margin-top: 30px !important;
+	background: #090;
+	width: 50% !important;
 }

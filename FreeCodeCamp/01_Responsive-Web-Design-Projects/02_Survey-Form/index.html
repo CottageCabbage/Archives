@@ -16,22 +16,39 @@
 		
 		<label for="name" id="name-label">
 			Name
-			<input type="text" id="name" name="Name" placeholder="Your name goes here">
+			<input type="text" id="name" name="Name" placeholder="Your name goes here" required>
 		</label>
 
 		<label for="email" id="email-label">
 			Email
-			<input type="email" id="email" name="Email" placeholder="Your Email goes here">
+			<input type="email" id="email" name="Email" placeholder="Your Email goes here" required>
 		</label>
 
 		<label for="number" id="number-label">
 			Age
-			<input type="number" id="number" name="Number" min="0" max="999" placeholder="99">
+			<input type="number" id="number" name="Number" min="0" max="999" placeholder="99" required>
 		</label>
 
+		<select id="dropdown">
+			<option>ASD</option>
+			<option>asdasd</option>
+		</select>
 
-		<button id="submit">Submit</button>
+		<div id="radioDiv">
+			<label><input type="radio" name="a">Hello</label>
+			<label><input type="radio" name="a">aadas</label>
+			<label><input type="radio" name="a">SADASQW</label>
+		</div>
 
+		<div id="checkDiv">
+			<label><input type="checkbox" name="" value="asd">Lol</label>
+			<label><input type="checkbox" name="" value="asdasd">Lol</label>
+			<label><input type="checkbox" name="" value="weqe">Lol</label>
+		</div>
+
+		<textarea>GEl</textarea>
+
+		<input type="submit" name="Submit" value="Submit" id="submit">
 	</form>
 </body>
 </html>
