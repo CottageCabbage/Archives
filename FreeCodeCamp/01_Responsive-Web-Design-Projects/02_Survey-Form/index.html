@@ -7,32 +7,47 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
+	<header> <!-- USER STORY #1 & #2 -->
 		<h1 id="title">This is a Survey Form</h1>
 		<p id="description">Description</p>
 	</header>
 
-	<form id="survey-form">
+	<form id="survey-form"> <!-- USER STORY #3 -->
 		
-		<label for="name" id="name-label">
-			Name
-			<input type="text" id="name" name="Name" placeholder="Your name goes here" required>
-		</label>
+		
+		<div class="longInput">
+			<label for="name" id="name-label"> <!-- USER STORY #4 --> 
+				Name 
+				<input type="text" id="name" name="Name" placeholder="Your name goes here" required>
+			</label>			
+		</div>
 
-		<label for="email" id="email-label">
-			Email
-			<input type="email" id="email" name="Email" placeholder="Your Email goes here" required>
-		</label>
+		<div class="longInput">
+			<label for="email" id="email-label"> <!-- USER STORY #5 & #6 -->
+				Email
+				<input type="email" id="email" name="Email" placeholder="Your Email goes here" required>
+			</label>
+		</div>
 
-		<label for="number" id="number-label">
-			Age
-			<input type="number" id="number" name="Number" min="0" max="999" placeholder="99" required>
-		</label>
+		<div class="longInput">
+			<label for="number" id="number-label"> <!-- USER STORY #7 & #8 & #9 -->
+				Age
+				<input type="number" id="number" name="Number" min="0" max="999" placeholder="99" required>
+			</label>			
+		</div>
 
-		<select id="dropdown">
-			<option>ASD</option>
-			<option>asdasd</option>
-		</select>
+		<div class="longInput">
+			<label>Your Favorite Placeholder Text
+				<select id="dropdown">
+					<option disabled>Not this one</option>
+					<option>Beep Boop</option>
+					<option>Yikes</option>
+					<option>Yeet</option>
+					<option>Lmfao</option>
+				</select>							
+			</label>
+		</div>
+
 
 		<div id="radioDiv">
 			<label><input type="radio" name="a">Hello</label>

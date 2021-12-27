@@ -1,51 +1,57 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
+/* GENERAL */
+	* {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
 
 
-body {
-	margin: 0;
-	background: #333;
-	color: #eee;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+	body {
+		margin: 0;
+		background: url('https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_1415.jpg'), #333;
+		color: #eee;	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-header {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	text-align: center;
-	
-}
+/* USER STORY #1 & #2 */
+	header {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
 
-#survey-form {
-	width: 50%;
-	border-radius: 6px;
-	background: #222;
-	box-shadow: 1px 1px 10px 2px black;
-	padding: 12px;
-	padding-top: 30	px;
+/* USER STORY #3 */
+	#survey-form {
+		width: 50%;
+		border-radius: 6px;
+		background: #222A;
+		box-shadow: 0px 0px 5px 1px black;
+		padding: 30px 5px 30px 5px;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
+/* CONTAINERS */ 
+	.longInput {
+		width: 90%;
+	}
+	.longInput + .longInput {
+		margin-top: 20px;
+	}
 
-#survey-form label {
-	width: 80%;
-}
+/* USER STORY #10 & 11 */
+	#survey-form label {
+		display: flex;
+		flex-direction: column;
+	}
 
-#survey-form label + label {
-	margin-top: 15px;
-}
-
-#survey-form input {
+/* Inputs and USER STORY #12 */
+#survey-form input, select {
 	display: block;
-	width: 100%;
 	border-radius: 5px;
 	padding: 5px;
 	margin-top: 5px;
