@@ -57,7 +57,7 @@
 		margin-top: 5px;
 	}
 
-/* USER STORY #13 */
+/* USER STORY #13 & #14 */
 	.choiceInput {
 		width: 90%;
 		display: flex;
@@ -74,11 +74,15 @@
 	.choiceInput input {
 		display: inline-block;
 		width: min-content;
-		margin-right: 5px;
+		margin-right: 7px;
+		transform: scale(1.2);
+	}
+	.choiceInput p {
+		margin-top: 5px;
+		margin-bottom: 8px;
 	}
 
-
-
+/* USER STORY #15 */
 
 
 
