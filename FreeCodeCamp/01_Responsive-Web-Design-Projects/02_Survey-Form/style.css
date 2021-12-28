@@ -44,46 +44,38 @@
 	}
 
 /* USER STORY #10 & 11 */
-	#survey-form label {
+	#survey-form .longInput label {
 		display: flex;
 		flex-direction: column;
 	}
 
-/* Inputs and USER STORY #12 */
-#survey-form input, select {
-	display: block;
-	border-radius: 5px;
-	padding: 5px;
-	margin-top: 5px;
-}
+/* Text, Email and Number Inputs and USER STORY #12 */
+	input[type='text'], input[type='email'], input[type='number'], select {
+		display: block;
+		border-radius: 5px;
+		padding: 5px;
+		margin-top: 5px;
+	}
 
-
-
-
-
-#radioDiv {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-}
-
-#radioDiv label {
-	width: 100% !important;
-}
-#radioDiv input {
-	display: inline-block; !important;
-	width: auto;
-}
-/*
-#radioDiv label {
-	display: inline;
-	float: right;
-}
-#survey-form input[type='radio'] {
-	display: inline;
-	float: right;
-}*/
-
+/* USER STORY #13 */
+	.choiceInput {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.choiceInput label {
+		display: flex;
+		flex-direction: row;
+	}
+	.choiceInput label + label {
+		margin-top: 10px;
+	}
+	.choiceInput input {
+		display: inline-block;
+		width: min-content;
+		margin-right: 5px;
+	}
 
 
 
