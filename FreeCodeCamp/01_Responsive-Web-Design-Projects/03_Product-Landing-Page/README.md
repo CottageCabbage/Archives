@@ -3,7 +3,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 **Example:** https://codepen.io/freeCodeCamp/full/RKRbwL
 **Template::** https://codepen.io/pen?template=MJjpwO
 
-**Codepen:** not yet
+**Codepen:** https://codepen.io/CottageCabbage/full/eYGVPZx
 
 
 # User Stories:
@@ -20,7 +20,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 + [x] User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
 
 <!-- VIDEO -->
-+ [ ] User Story #6: I can watch an embedded product video with id="video".
++ [x] User Story #6: I can watch an embedded product video with id="video".
 
 <!--FORM-->
 + [x] User Story #7: My landing page has a form element with a corresponding id="form".
@@ -38,6 +38,6 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 <!--NAVBAR-->
 + [x] User Story #13: The navbar should always be at the top of the viewport.
 
-+ [ ] User Story #14: My product landing page should have at least one media query.
++ [x] User Story #14: My product landing page should have at least one media query.
 
 + [x] User Story #15: My product landing page should utilize CSS flexbox at least once. 
