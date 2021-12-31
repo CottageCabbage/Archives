@@ -1,0 +1,46 @@
+body {
+	background: #aaa;
+}
+
+.rowContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.columnContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	height: 300px;
+	width: 300px;
+}
+
+.A {
+	background: red;
+}
+
+.B {
+	background: green;
+}
+
+
+.openRowB {
+	animation-name: openRowB;
+	animation-duration: 2s;
+}
+
+.openColumnB {
+	animation-name: openColumnB;
+	animation-duration: 2s;
+}
+
+@keyframes openRowB {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 300px;
+	}
+}
