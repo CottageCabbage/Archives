@@ -1,15 +1,33 @@
 body {
 	background: #aaa;
+	position: relative;
 }
 
 .rowContainer {
+	position: relative;
 	display: flex;
 	flex-direction: row;
+	width: min-content;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.rowContainer2 {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 600px;
+	margin: auto;
+
 }
 
 .columnContainer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	width: min-content;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .card {
@@ -19,28 +37,89 @@ body {
 
 .A {
 	background: red;
+	display: flex;
 }
 
-.B {
+.rowB {
 	background: green;
+	width: 0;
+	opacity: 0;
+}
+
+.columnB {
+	background: green;
+	height: 0;
+	opacity: 0;
 }
 
 
 .openRowB {
 	animation-name: openRowB;
 	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
 .openColumnB {
 	animation-name: openColumnB;
 	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
+
+.closeRowB {
+	animation-name: closeRowB;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.closeColumnB {
+	animation-name: closeColumnB;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
 
 @keyframes openRowB {
 	0% {
 		width: 0;
+		opacity: 0;
 	}
 	100% {
 		width: 300px;
+		opacity: 1;
+		/*visibility: visible;*/
+	}
+}
+
+@keyframes closeRowB {
+	0% {
+		width: 300px;
+		opacity: 1;
+	}
+	100% {
+		width: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes openColumnB {
+	0% {
+		height: 0;
+		opacity: 0;
+	}
+	100% {
+		height: 300px;
+		opacity: 1;
+		/*visibility: visible;*/
+	}
+}
+
+@keyframes closeColumnB {
+	0% {
+		height: 300px;
+		opacity: 1;
+	}
+	100% {
+		height: 0px;
+		opacity: 0;
 	}
 }
