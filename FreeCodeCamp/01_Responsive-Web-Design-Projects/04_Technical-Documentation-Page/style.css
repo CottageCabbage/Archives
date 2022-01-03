@@ -15,6 +15,8 @@
 
 /* Nav-Bar */
 	#nav-bar {
+		position: sticky;
+		top: 0; left: 0;
 		width: 20vw;
 		height: 100vh;
 		background: red;
@@ -24,17 +26,23 @@
 	}
 	#nav-bar>* {
 		width: 100%;
-		text-align: center;
+		/*text-align: center;*/
+		padding: 8px;
+		margin-top: 5px;
 	}
 	#nav-bar-header {
 		font-size: 30px;
-		border-bottom: 3px dashed grey;
+		border-bottom: 2px dashed #333;
+		text-align: center;
 	}
+
 	.nav-link {
 		font-size: 20px;
-
-		border-bottom: 1px solid black;
+		border-bottom: 1.9px solid black;
 		text-decoration: none;
+	}
+	.nav-link:hover {
+		font-size: 23px;
 	}
 
 
@@ -42,8 +50,12 @@
 
 #main-doc {
 	width: 80vw;
-	height: 100vh;
+	height: 100%;
 	background: green !important;
+	padding: 15px;
 }
 
 
+.main-section header {
+	font-size: 35px;
+}
