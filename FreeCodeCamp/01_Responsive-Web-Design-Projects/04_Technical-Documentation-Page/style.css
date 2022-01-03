@@ -19,7 +19,8 @@
 		top: 0; left: 0;
 		width: 20vw;
 		height: 100vh;
-		background: red;
+		background: #222;
+		color: #bbb;
 		display: flex;
 		flex-direction: column;
 		padding-top: 8px;
@@ -35,14 +36,18 @@
 		border-bottom: 2px dashed #333;
 		text-align: center;
 	}
-
 	.nav-link {
 		font-size: 20px;
 		border-bottom: 1.9px solid black;
 		text-decoration: none;
+		color: #bbb;
 	}
 	.nav-link:hover {
-		font-size: 23px;
+		color: #aaa;
+		text-decoration: underline;
+	}
+	.nav-link:hover {
+		font-size: 21px;
 	}
 
 
@@ -51,11 +56,20 @@
 #main-doc {
 	width: 80vw;
 	height: 100%;
-	background: green !important;
+	background: #333;
+	color: #CCC;
 	padding: 15px;
 }
 
 
 .main-section header {
 	font-size: 35px;
+}
+#main-doc section+section {
+	margin-top: 30px;
+}
+
+.main-section p {
+	font-size: 18px;
+	margin-left: 7px;
 }
