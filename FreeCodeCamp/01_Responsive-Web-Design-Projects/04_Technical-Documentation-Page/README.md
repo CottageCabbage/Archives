@@ -17,9 +17,9 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 
 + [ ] User Story #5: The .main-section elements should contain at least 10 p elements total (not each). [6/10]
 
-+ [ ] User Story #6: The .main-section elements should contain at least 5 code elements total (not each). [0/5]
++ [ ] User Story #6: The .main-section elements should contain at least 5 code elements total (not each). [2/5]
 
-+ [ ] User Story #7: The .main-section elements should contain at least 5 li items total (not each). [0/5]
++ [x] User Story #7: The .main-section elements should contain at least 5 li items total (not each).
 
 + [x] User Story #8: I can see a nav element with a corresponding id="navbar".
 

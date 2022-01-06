@@ -51,6 +51,17 @@
 	}
 
 
+@media(max-width: 700px) {
+	#navbar {
+		display: none;
+	}
+	#main-doc {
+		width: 100vw !important;
+	}
+}
+
+
+
 
 
 #main-doc {
@@ -72,16 +83,30 @@
 .main-section p {
 	font-size: 18px;
 	margin-left: 8px;
+	margin-bottom: 5px;
 }
 .main-section p+p {
-	margin-top: 8px;
+	margin-top: 9px;
 }
-.main-section p code {
+.main-section p code{
 	display: block;
 	background: #222;
 	padding: 5px;
 	font-size: 16px;
 }
+
+li code {
+	display: inline-block;
+	background: #222;
+	padding: 4px;
+	font-size: 15px;
+}
+
+code br {
+	margin-bottom: 3px;
+}
+
+
 .main-section p a {
 	color: orange;
 }

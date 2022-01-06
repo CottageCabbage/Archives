@@ -44,22 +44,57 @@
 
 		<section class="main-section" id="Make_your_own">
 			<header>Make your own</header>
-			<p>Generator, that is. A much more basic one, but it works. First, create an array, of words or sentences, and make them <i>Latin</i>. We'll use the following seven:</p>
+			<p>Generator, that is. A much more basic one, but it works. First, create an array, of words or sentences, and make them <i>Latin</i>. Meaning doesn't matter, as long as they occupy space. We'll use the following seven:</p>
 			
 			<ul>
-				<li>Etiam ut velit velit. Aliquam eu augue.</li>
-				<li>Proin id ex magna. Curabitur dolor lectus, rhoncus sit.</li>
-				<li>Nulla facilisi. Curabitur sodales enim eget sem vehicula vulputate sed et lorem.</li>
-				<li>Cras a cursus tellus. Donec faucibus turpis nec.</li>
+				<li>Etiam ut velit velit, aliquam eu augue.</li>
+				<li>Proin id ex magna, curabitur dolor lectus, rhoncus sit.</li>
+				<li>Nulla facilisi, curabitur sodales enim eget sem vehicula vulputate sed et lorem.</li>
+				<li>Cras a cursus tellus, donec faucibus turpis nec.</li>
 				<li>Vestibulum commodo, erat eget gravida condimentum, augue tortor congue mi.</li>
-				<li>Aenean sed arcu et diam convallis bibendum. Nulla at.</li>
-				<li>Nullam vel lacus vitae libero scelerisque blandit. Phasellus maximus pretium magna.</li>
+				<li>Aenean sed arcu et diam convallis bibendumm nulla at.</li>
+				<li>Nullam vel lacus vitae libero scelerisque blandit, phasellus maximus pretium magna.</li>
 			</ul>
 
 			<p>
 				<code>var sentencesArray = ["Etiam ut velit velit. Aliquam eu augue.", "Proin id ex magna. Curabitur dolor lectus, rhoncus sit.", "Nulla facilisi. Curabitur sodales enim eget sem vehicula vulputate sed et lorem.", "Cras a cursus tellus. Donec faucibus turpis nec.", "Vestibulum commodo, erat eget gravida condimentum, augue tortor congue mi.", "Aenean sed arcu et diam convallis bibendum. Nulla at.", "Nullam vel lacus vitae libero scelerisque blandit. Phasellus maximus pretium magna."]</code>
 			</p>
 
+			<p>Following that, create a Number Input, a Button and a Paragraph.</p>
+
+			<p>
+				<code>&lt;input type='number' id='number_of_sentences'&gt; <br>
+					  &lt;button onclick='printLorem()'&gt; <br>
+					  &lt;p id='loremGoesHere'&gt;Text&lt;/p&gt;
+				</code>
+			</p>
+
+			<p>Following that, underneath the array in the .js file, create the function <span style="font-family: monospace;">printLorem()</span></p>
+
+			<p><code>function printLorem() {<br><br>}</code></p>
+
+			<p>Within it, write the following code:</p>
+
+			<p><code>
+				document.getElementById('loremGoesHere').innerHTML = ''; <br>
+				var number_of_sentences = document.getElementById('number_of_sentences').value; <br>
+				for (var i = 0; i < number_of_sentences; i++) { <br>
+				&emsp;&emsp;var x = Math.floor(Math.random() * sentencesArray.length); <br>
+				&emsp;&emsp;document.getElementById('loremGoesHere').innerHTML += ' ' + sentencesArray[x]; <br>
+				}
+			</code></p>
+
+			<p>What each part of this will do:</p>
+
+			<ul>
+				<li><code>document.getElementById('loremGoesHere').innerHTML = '';</code> simply cleans up any previous generated Lorem Ipsum.</li>
+				<li><code>var number_of_sentences = document.getElementById('number_of_sentences').value;</code> uses the input's value to get the number of sentences to print out.</li>
+				<li><code> for (var i = 0; i < number_of_sentences; i++) { }</code> run loop while var i is below number_of_sentences. Each loop, add +1 to i, until it is equal to number_of_senteces</li>
+				<li><code>var x = Math.floor(Math.random() * sentencesArray.length);</code> gets a number from 0 to n, where n is number of items in the array;</li>
+				<li><code>document.getElementById('loremGoesHere').innerHTML += ' ' + sentencesArray[x];</code> finally, this adds the sentence in the equivalent position <span style="font-family: monospace; font-size: 16px;">x</span> of sentencesArray to the paragraph.</li>
+			</ul>
+
+			<p>It's rough, but works. A larger pool of sentences would make it better.</p>
 		</section>
 	</main>
 </body>
