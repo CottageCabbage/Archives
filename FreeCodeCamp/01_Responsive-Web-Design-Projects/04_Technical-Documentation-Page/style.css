@@ -52,8 +52,42 @@
 
 
 @media(max-width: 700px) {
+	body {
+		flex-direction: column;
+	}
 	#navbar {
-		display: none;
+		position: static;
+		/*flex-direction: row;*/
+		width: 100vw;
+		height: auto;
+		padding-top: 0;
+		border-bottom: 2px solid #888;
+		padding-bottom: 7px;
+	}
+	#navbar-header {
+		border: none;
+		border-bottom: 2px dashed #aaa;
+		width: 80%;
+		margin: auto;
+		font-size: 20px;
+		font-weight: 1000;
+		margin-bottom: 3px;
+	}
+	.nav-link {
+		border: none;
+		text-align: center;
+		font-size: 14px;
+		padding: 0 ; margin: 0;
+	}
+	#navbar *+* {
+		margin-top: 0px !important;
+		margin-bottom: 0 !important;
+		padding-top: 5px !important;
+		padding-bottom: 0 !important;
+	}
+
+	.nav-link:hover {
+		font-size: 15px;
 	}
 	#main-doc {
 		width: 100vw !important;

@@ -3,7 +3,7 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 **Example:** https://codepen.io/freeCodeCamp/full/NdrKKL  
 **Template::** https://codepen.io/pen?template=MJjpwO
 
-**Codepen:** not yet
+**Codepen:** https://codepen.io/CottageCabbage/pen/XWeBBmy
 
 
 # User Stories: 
@@ -15,9 +15,9 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 
 + [x] User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
 
-+ [ ] User Story #5: The .main-section elements should contain at least 10 p elements total (not each). [6/10]
++ [x] User Story #5: The .main-section elements should contain at least 10 p elements total (not each). [6/10]
 
-+ [ ] User Story #6: The .main-section elements should contain at least 5 code elements total (not each). [2/5]
++ [x] User Story #6: The .main-section elements should contain at least 5 code elements total (not each). [2/5]
 
 + [x] User Story #7: The .main-section elements should contain at least 5 li items total (not each).
 
@@ -35,4 +35,4 @@ https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-p
 
 + [x] User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 
-+ [ ] User Story #15: My Technical Documentation page should use at least one media query.
++ [x] User Story #15: My Technical Documentation page should use at least one media query.
