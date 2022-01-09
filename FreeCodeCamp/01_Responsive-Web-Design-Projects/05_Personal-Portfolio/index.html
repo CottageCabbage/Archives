@@ -8,31 +8,74 @@
 </head>
 <body>
 	<nav id="navbar">
-		<a href="#welcome-section">Welcome</a>
+		<a href="#" onclick="lol()">Welcome</a>
 		<a href="#about">About Me</a>
 		<a href="#projects">Projects</a>
 	</nav>
 	<header id="welcome-section">
 		<h1>Welcome to my Portfolio</h1>
-		<p>I'm CottageCabbage</p>
+		<p>I'm CottageCabbage, and...</p>
 		<div id="down" onclick="pushPageDown()"></div>	
 	</header>
-	<video width="320" height="240" controls>
-		<source src="video.mp4" type="video/mp4">
-	</video> 
+ 
+ 	<main>
+ 		<section id="gnome">
+ 			<video controls id="gnomed">
+				<source src="https://raw.githubusercontent.com/CottageCabbage/Archives/main/FreeCodeCamp/01_Responsive-Web-Design-Projects/05_Personal-Portfolio/video.mp4" type="video/mp4">
+			</video>
+			<h2>You've been gnomed!</h2>
+			<p>Wait! Don't leave! The Portfolio is just below!</p>
+ 		</section>
 
-	<main>
 		<section id="about">
-			<h2>About Me</h2>
+			<div id="about-top">
+				<hr>
+				<h2 onclick="lol()">About Me</h2>
+				<hr>
+			</div>
+			
 		</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 
 		<section id="projects">
 			<h2>Projects</h2>
 			<p>Finished Projects:</p>
-			<!--  -->
 			<p>Right now, I'm working on:</p>
-			<!--  -->
-		</section>
+		</section> -->
 	</main>
 </body>
 </html>
 <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<script type="text/javascript">
+	function pushPageDown() {
+		var x = document.getElementById('gnomed')
+		x.play()
+		window.scrollBy({
+			top: window.innerHeight,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+</script>
+<script type="text/javascript">function lol() {window.scrollTo({top: 0, behavior: 'smooth'});}</script>
+<script type="text/javascript">
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		});
+	});
+});
+</script>

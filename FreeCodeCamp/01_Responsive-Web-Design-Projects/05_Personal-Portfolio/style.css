@@ -6,13 +6,13 @@
 		box-sizing: border-box;
 	}
 	body {
-		background-color: #777;
-		color: #eee;
+		background-color: #545;
+		color: #ddd;
 	}
 
 /* Navbar */
 	#navbar {
-		position: sticky;
+		position: sticky; top: 0;
 		width: 100%;
 		height: 7vh;
 		background-color: #2E2B2E;
@@ -21,6 +21,7 @@
 		flex-direction: row;
 		justify-content: flex-end; align-items: center;
 		padding: 10px;
+		z-index: 99999;
 	}
 
 	#navbar a+a {
@@ -31,45 +32,94 @@
 	}
 
 /* Header */
-#welcome-section {
-	width: 100%;
-	height: 93vh;
-	background-color: #111;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 30px;
-}
-#welcome-section P {
-	margin-left: 15px;
-}
-
-#down {
-	height: 50px; width: 100px;
-	justify-self: flex-end; align-self: center;
-	position: relative;
-    border-top-left-radius: 110px;
-    border-top-right-radius: 110px;
-    border: 10px solid gold;
-    background-color: gold;	
-
-
-    position: absolute;
-    bottom: 0;
-}
-
-
-
-#down:hover {
-	animation-name: grow;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes grow {
-	100% {
-		transform: scale(1.2);
-		bottom: 5px;
+	#welcome-section {
+		width: 100%;
+		height: 93vh;
+		background-color: #111;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 30px;
+		font-family: sans-serif;
+	}
+	#welcome-section P {
+		margin-left: 15px;
+		font-size: 20px;
 	}
 
+	#down {
+		height: 50px; width: 100px;
+		justify-self: flex-end; align-self: center;
+		position: relative;
+	    border-top-left-radius: 110px;
+	    border-top-right-radius: 110px;
+	    border: 10px solid gold;
+	    background-color: gold;	
+	    position: absolute;
+	    bottom: 0;
+	}
+	#down:hover {
+		animation-name: grow;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes grow {
+		100% {
+			transform: scale(1.2);
+			bottom: 5px;
+		}
+	}
+
+/* Gnome */
+	#gnome {
+		margin: auto;
+		text-align: center;
+		margin-top: 10vh;
+		font-family: sans-serif;
+		margin-bottom: 14px;
+	}
+	#gnome h2 {
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+	#gnome p {
+		font-family: 20px;
+	}
+	video {
+		width: 900px; 
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-bottom: 3px;
+	}
+
+/* About Me */
+#about {
+	background-color: black;
+	width: 100%;
+	height: 93vh;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 15px;
+}
+
+#about h2 {
+	color: #ccc;
+	font-size: 35px;
+}
+
+#about-top {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+#about-top hr {
+	min-width: 25%;
+	width: 35%;
+	margin: auto;
+	position: relative;
+	transform: translateY(-50%);
+	border-bottom: 1px solid white;
 }
