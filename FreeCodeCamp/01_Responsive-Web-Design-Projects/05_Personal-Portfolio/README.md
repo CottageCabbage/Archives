@@ -23,9 +23,11 @@ User Story #5: The projects section should contain at least one link to a projec
 
 ---
 
-User Story #6: My portfolio should have a navbar with an id of navbar.
-
-User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
++ [ ] User Story #6: My portfolio should have a navbar with an id of navbar.
+	+ [x] HTML
+	+ [ ] CSS
+	
++ [x] User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
 
 ---
 
