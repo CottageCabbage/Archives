@@ -123,3 +123,19 @@
 	transform: translateY(-50%);
 	border-bottom: 1px solid white;
 }
+
+
+#about-main, #about-social {
+	margin-top: 20px;
+}
+
+#about-social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#twitter, #telegram, #email {
+	width: 100px; height: 100px;
+	background-color: skyblue;
+}
