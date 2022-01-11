@@ -135,12 +135,30 @@
 	justify-content: space-around;
 }
 
-#twitter, #telegram, #email {
-	width: 100px; height: 100px;
-	background-color: skyblue;
-}
+
 
 #about-main {
 	width: 80%;
 	margin: 20px auto;
+}
+
+
+
+
+#twitter, #telegram, #email, #github {
+	width: 100px; height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: skyblue;*/
+}
+#twitter {
+	color: lightblue !important;
+}
+i {
+	/*color: white;*/
+	font-size: 75px !important;
+	/*width: 20px; height: 20px;*/
+	/*background-color: red;*/
+	display: block;	
 }
