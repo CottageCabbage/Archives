@@ -139,3 +139,8 @@
 	width: 100px; height: 100px;
 	background-color: skyblue;
 }
+
+#about-main {
+	width: 80%;
+	margin: 20px auto;
+}
