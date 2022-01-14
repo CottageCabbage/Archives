@@ -1,0 +1,1 @@
+Couldn't commit the whole folder. Error, something about `simple-desktop-app-electronjs` being a directory. Sucks, but it's also my first Electron app, so I'll put it here anyway.
