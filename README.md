@@ -18,11 +18,11 @@
 	+ [Personal Portfolio](https://github.com/CottageCabbage/Archives/tree/main/FreeCodeCamp/1-Responsive-Web-Design/5-Personal-Portfolio) (INCOMPLETE) (HTML-CSS-JS)
 
 
-+ **Articles:** 
++ **Tutorials and Articles:** 
 
 	+ [Build Six Quick Python Projects](https://www.freecodecamp.org/news/build-six-quick-python-projects/) 
 		
-		+ [Bulk File Renamer](#) (2022-01-12) (PYTHON)
+		+ [Bulk File Renamer](https://github.com/CottageCabbage/Archives/tree/main/FreeCodeCamp/Tutorials-and-Articles/Build-Six-Quick-Python-Projects/Renaming-Bulk-Files) (PYTHON)
 
 ---
 + [florinpop17/app-ideas](https://github.com/florinpop17/app-ideas)
