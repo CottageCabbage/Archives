@@ -36,14 +36,33 @@
     </header>
 
     <main id="task-list">
-      <div class="task" v-for="(task, index) in tasks">
+      <div class="task" v-for="(task, index) in tasks" :key="index">
         <input
           type="checkbox"
+          v-model="task.complete"
         />
-        <span>{{task.text}}</span>
+        <input
+          type="text"
+          v-model="task.text"
+          :readonly="task.editing === false"
+          :style="[
+            task.complete ?
+              {'text-decoration': 'line-through', 'color': '#aaa'}
+              : {'text-decoration': 'none'}]"
+        />
         <div class="actions">
-          <i class="fa-solid fa-pen" style="font-size: 1.1rem;"></i>
-          <i class="fa-solid fa-xmark"></i>
+          <i
+            class="fa-solid fa-pen" style="font-size: 0.95rem;"
+            v-if="task.editing === false"
+            @click="editTask(index)">
+          </i>
+          <i class="fa-solid fa-check"
+            v-else-if="task.editing === true"
+            @click="editTask(index)">
+          </i>
+          <i class="fa-solid fa-xmark"
+            @click="deleteTask(index)">
+          </i>
         </div>
       </div>
     </main>
@@ -66,7 +85,7 @@
       return {
         newTask: '',
         addWith: 'unshift',
-        tasks: []
+        tasks: [],
       }
     },
     mounted () {
@@ -78,15 +97,27 @@
     methods: {
       addTask() {
         if (this.newTask !== '') {
+          const template = {
+            text: this.newTask,
+            complete: false,
+            editing: false
+          }
+
           switch (this.addWith) {
             case 'unshift':
-              this.tasks.unshift({text: this.newTask})
+              this.tasks.unshift(template)
               break
             case 'push':
-              this.tasks.push({text: this.newTask})
+              this.tasks.push(template)
               break
           }
         }
+      },
+      deleteTask(index) {
+        this.tasks.splice(index, 1)
+      },
+      editTask(index) {
+        this.tasks[index].editing = !this.tasks[index].editing
       }
     },
     watch: {
